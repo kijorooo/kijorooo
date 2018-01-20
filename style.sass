@@ -67,25 +67,70 @@ input[type="submit"]:hover
 			width: 200px
 
 
-nav
+#menu
+	display: none
+
+
+#bigmenu
+	position: absolute
+	width: 100vw
+	height: 100vh
+	background-color: rgba(0, 0, 0, 0.95)
+	display: none
+	z-index: 9999
 	ul 
-		text-align: center
-		margin-bottom: 0em
-		padding-left: 0em
+		padding: 2em
 		a 
 			text-decoration: none
+			display: inherit
 			li
+				list-style: none
+				font-size: 2em
+				text-decoration: none
+				color: white
+				padding-top: .5em
 				display: inline-block
-				font-size: 1.5em
-				padding-left: 1em
+				&:hover
+					color: #ffbc52
 
-@media only screen and (max-width: 563px)
-	nav
-		ul 
-			text-align: left
-			a
-				li
-					display: block
+
+#bigmenu.yes
+	display: block
+
+
+
+#lmenu
+	position: absolute
+	ul 
+		margin: 0
+		padding-left: 0em
+		text-align: center
+		padding: .9em
+		li 
+			color: white
+			padding: .5em
+			display: inline-block
+			&:hover
+				cursor: pointer
+				color: #ffa215
+
+
+
+@media only screen and (max-width: 610px)
+
+	#lmenu
+		ul
+			display: none
+
+	#menu
+		display: block
+		color: white
+		cursor: pointer
+		padding: 0em
+		display: inline-block
+		padding-left: 1em
+
+
 
 
 
