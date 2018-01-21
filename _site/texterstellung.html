@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85993724-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-85993724-5');
+</script>
+  
   <title>Internationale Texterstellung - kijorooo.com</title>
 
     <!-- styles.css Link -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <!-- font Link -->
    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
@@ -29,21 +39,46 @@
 
 	<img id="herobild" src="/img/herobild.png" alt="hero" width="300px">
 
-	<img id="logo" src="/img/logo.svg" alt="logo">
+		<a href="/"><img id="logo" src="/img/logo.svg" alt="logo"></a>
 
 
 	</div>
 </section>
 
-	<nav>
+<nav id="bigmenu">
+
+
+
 		<ul>
-			<a href="/"><li>Home</li></a>
-			<a href="index-uebersetzung.html"><li>Übersetzungen</li></a>
-			<a href="index-text.html"><li class="active">Texterstellung</li></a>
-			<a href="index-korrektur.html"><li>Korrekturlesen</li></a>
-			<a href="index-contact.html"><li>Kontakt</li></a>
+			<a href="/"><li class="active">Home</li></a>
+			<a href="uebersetzungen.html"><li>Übersetzungen</li></a>
+			<a href="texterstellung.html"><li>Texterstellung</li></a>
+			<a href="korrekturen.html"><li>Korrekturlesen</li></a>
+			<a href="kontakt.html"><li>Kontakt</li></a>
 		</ul>
-	</nav>
+
+<h3 id="menu2" onclick="myFunction()">zurück</h3>
+		
+</nav>  
+
+
+
+
+<nav id="lmenu">
+
+<h3 id="menu" onclick="myFunction()">Menu</h3>
+		
+		<h3>kijorooo.com</h3>
+
+
+		<ul>
+			<a href="/"><li class="active">Home</li></a>
+			<a href="uebersetzungen.html"><li>Übersetzungen</li></a>
+			<a href="texterstellung.html"><li>Texterstellung</li></a>
+			<a href="korrekturen.html"><li>Korrekturlesen</li></a>
+			<a href="kontakt.html"><li>Kontakt</li></a>
+		</ul>
+</nav>
 
 <section id="area1">
 
@@ -123,14 +158,19 @@
 
 
 
+
+
+
+
 <footer>
 	<ul>
-		<a href="index-wichtig.html"><li>Impressum</li></a>
+		<a href="index-wichtig.html"><img src="/img/informationen.svg" alt="info"></a>
 		<a href="index-datenschutz.html"><li>Datenschutz</li></a>
-		<a href="index-about.html"><li>Über uns</li></a>
+		<a href="ueber-uns.html"><li>Über uns</li></a>
 	</ul>
 </footer>
 
+<script src="/main.js"></script>
 
 </body>
 </html>
