@@ -7,18 +7,41 @@ p {
   font-size: 1em;
   line-height: 1.7em; }
 
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 1.9em; }
+
+strong {
+  color: black; }
+
 img {
   max-width: 100%; }
 
 .liste {
-  padding-left: 1em; }
+  padding-left: 0em;
+  margin-top: 0em; }
   .liste li {
     color: #797979;
+    border-bottom: 2px solid #e0e0e0;
     font-size: 1em;
-    line-height: 1.7em; }
+    line-height: 1.7em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    list-style: none; }
 
 .active {
   color: #63bdf1; }
+
+button {
+  background-color: #ff6500;
+  font-size: 1.4em;
+  color: white;
+  border-radius: 5%;
+  border: none;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-top: 1.5em; }
 
 .nom {
   margin-top: 0em; }
@@ -46,6 +69,19 @@ input[type="submit"]:hover {
   background-color: #203047;
   color: white;
   cursor: pointer; }
+
+#warum {
+  margin-bottom: 0em; }
+
+#telefon {
+  display: inherit;
+  padding: 1em;
+  padding-left: 0em;
+  text-decoration: none;
+  font-size: 1.7em;
+  color: #ff6600;
+  letter-spacing: 0.03em;
+  padding-top: 0.3em; }
 
 #homepage-hero {
   background-color: #243751; }
@@ -95,6 +131,8 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  #lmenu a {
+    text-decoration: none; }
   #lmenu ul {
     margin: 0;
     padding-left: 0em;
@@ -146,12 +184,17 @@ input[type="submit"]:hover {
     border-left: 2px solid #f1f1f1;
     padding-left: 2em;
     box-sizing: border-box; }
+    #area1 .wrapper-right h4 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em; }
     #area1 .wrapper-right #port {
       margin-top: 1em;
       width: 100px;
       border-radius: 50%;
       height: 100px;
       object-fit: cover; }
+    #area1 .wrapper-right .maa {
+      margin-top: 0.5em; }
 
 @media only screen and (max-width: 1000px) {
   #area1 {
