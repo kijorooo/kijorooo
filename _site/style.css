@@ -215,6 +215,9 @@ footer {
   background-color: #181818;
   margin-top: 2em;
   padding: 2em; }
+  footer h3 {
+    color: #ff5a00;
+    font-weight: 500; }
   footer ul {
     padding-left: 0em;
     border-top: 1px solid white;
