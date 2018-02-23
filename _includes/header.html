@@ -17,18 +17,25 @@
 
 
 
-<nav id="lmenu">
 
-<h3 id="menu" onclick="myFunction()">Menu</h3>
+<nav id="menu">
+
+	<h3 id="menu" onclick="myFunction()">Menu</h3>
 		
-		<a href="/"><h3>kijorooo.com</h3></a>
+	<a href="/"><h3>kijorooo.com</h3></a>
 
+  <ul>
+    <a href="/">Home</a>
+    <a href="/">Blog</a> 
+    <div class="dropdown">
+      <a class="dropbtn" href="/services">Services &#9660;</a>
+      <div class="dropdown-content">
+      <a href="/services/service1">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      </div>
+    </div>
 
-		<ul>
-			<a href="/"><li class="active">Home</li></a>
-			<a href="/service/uebersetzungen.html"><li>Übersetzungen</li></a>
-			<a href="/service/texterstellung.html"><li>Texterstellung</li></a>
-			<a href="/service/korrekturen.html"><li>Korrekturlesen</li></a>
-			<a href="https://kijorooo.com/kontakt.html"><li>Kontakt</li></a>
-		</ul>
-</nav>
+  </ul>
+    
+</nav> 
