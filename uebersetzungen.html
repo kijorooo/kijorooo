@@ -1,3 +1,7 @@
+---
+# this is an empty front matter
+---
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -37,30 +41,7 @@
 <body>
 
 
-
-<nav id="menu">
-
-  <a href="/"><h3>kijorooo.com</h3></a>
-
-  <ul>
-    <a href="/">Home</a>
-    <div class="dropdown">
-      <a class="dropbtn" href="/service">Services &#9660;</a>
-
-      <div class="dropdown-content">
-      <a href="/service/texte-schreiben-lassen">Texte</a>
-      <a href="/service/korrekturlesen-studenten">Korrekturlesen</a>
-      <a href="/service/uebersetzungen-studenten">Übersetzungen</a>
-      </div>
-
-
-    </div>
-    <a href="/kontakt">Kontakt</a>
-
-  </ul>
-    
-</nav> 
-
+{% include header.html %}
 
 <section id="area1">
 
@@ -120,38 +101,7 @@
 
 	<div class="wrapper-right">
 
-		<h4>English über Arabisch bis Japanisch.</h4>
-		
-		<img src="/img/viele-sprachen.png" width="250px">
-
-		<h4>Warum wir?</h4>
-
-		<ul class="liste">
-			<li>Günstige & Faire Preise.</li>
-			<li>Hochwertige Texte inkl. Qualitätskontrolle.</li>
-			<li>Muttersprachler aus der ganzen Welt.</li>
-			<li>Schnell & ohne lange Wartezeit.</li>
-		</ul>
-
-		<h4>Telefonischer Kontakt</h4>
-
-		<a id="telefon" title="Rufen Sie an für Übersetzungen & Text" href="tel:123456789">0176 458 39398</a>
-
-
-
-		<img title="foto-übersetzer" id="port" src="/img/foto-von-texter.png" alt="foto-eines-übersetzers">
-
-		<h4 class="maa">Riccardo (Texter)</h4>
-
-		<img title="foto-texterin" id="port" src="/img/foto-von-texter2.png" alt="foto-eines-texters">
-
-		<h4 class="maa">Yuko (Texterin)</h4>
-
-		<img title="foto-übersetzerin" id="port" src="/img/foto-von-texter3.png" alt="foto-einer-texterin">
-
-		<h4 class="maa">Yasmine (Übersetzerin)</h4>
-
-		<a href="kontakt"><button>Kontakt</button></a>
+		{% include sidebar.html %}
 
 	</div>
 
@@ -165,20 +115,7 @@
 
 
 
-
-
-<footer>
-	
-	<h3>Kijorooo.com - Internationale Texte & Übersetzungen</h3>
-
-	<ul>
-		<a href="index-wichtig.html"><img src="/img/informationen.svg" alt="info"></a>
-		<a href="index-datenschutz.html"><li>Datenschutz</li></a>
-		<a href="ueber-uns.html"><li>Über uns</li></a>
-	</ul>
-</footer>
-
-<script src="/main.js"></script>
+{% include footer.html %}
 
 </body>
 </html>

@@ -100,89 +100,79 @@ input[type="submit"]:hover
 			left: 1em
 			width: 200px
 
-#menu2,
-#menu
-	display: none
 
 
-#bigmenu
+.dropdown 
+	display: inline-block
+
+.dropbtn 
+	background-color: #181818
+	color: white
+	padding: 16px
+	font-size: 16px
+	border: none
+	cursor: pointer
+
+.dropdown-content
+	visibility: visible
+	opacity: 0
 	position: absolute
-	width: 100vw
-	height: 100vh
-	background-color: rgba(0, 0, 0, 0.95)
-	display: none
-	z-index: 9999
-	top: 0
-	ul 
-		padding: 2em
-		a 
-			text-decoration: none
-			display: inherit
-			li
-				list-style: none
-				font-size: 2em
-				text-decoration: none
-				color: white
-				padding-top: .5em
-				display: inline-block
-				&:hover
-					color: #ffbc52
+	background-color: #181818
+	min-width: 160px
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+	z-index: 1
+	transition: all .3s ease-in
+	a 
+		display: block !important
 
-
-#bigmenu.yes
-	display: block
-
-
-
-#lmenu
-	background-color: #191919
+#menu 
+	background-color: #181818
+	margin: 0
+	padding: .4em
 	display: flex
 	justify-content: space-around
 	align-items: center
 	a 
 		text-decoration: none
-	ul 
-		margin: 0
-		padding-left: 0em
-		text-align: center
-		padding: .9em
-		li 
-			color: white
-			padding: .5em
-			display: inline-block
-			font-size: 1.2em
-			&:hover
-				cursor: pointer
-				color: #f6b153
-	h3 
-		color: #f6b153
+		h3
+			color: #f6b153
+			margin: 0
+
+
+#menu ul a 
+	color: white
+	padding: 12px 16px
+	text-decoration: none
+	display: inline-block
+
+
+.dropdown-content a 
+	color: black
+	padding: 12px 16px
+	text-decoration: none
+	display: block
+
+
+#menu ul a:hover 
+	color: #f5a73a
+
+
+.dropbtn:hover + .dropdown-content 
+	visibility: visible
+	opacity: 1
+
+
+.dropbtn:hover + .dropdown-content, 
+.dropdown-content:hover 
+	visibility: visible
+	opacity: 1
 
 
 @media only screen and (max-width: 610px)
-
-	#lmenu
+	#menu 
+		flex-direction: column
 		ul
-			display: none
-
-	#menu
-		display: block
-		color: #243750
-		cursor: pointer
-		padding: 0em
-		text-align: center
-		font-size: 1.5em
-
-	#menu2
-		display: block
-		color: white
-		cursor: pointer
-		padding: 0em
-		text-align: center
-		font-size: 1.5em
-
-
-
-
+			padding-left: 0em
 
 #area1
 	display: grid
