@@ -6,34 +6,40 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
-  <loc>http://kijorooo.com/</loc>
-  <lastmod>2018-01-06T11:30:04+00:00</lastmod>
+  <loc>https://kijorooo.com/</loc>
+  <lastmod>2018-02-23T15:43:12+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://kijorooo.com/uebersetzungen.html</loc>
-  <lastmod>2018-01-06T11:30:04+00:00</lastmod>
+  <loc>https://kijorooo.com/service/texte-schreiben-lassen</loc>
+  <lastmod>2018-02-23T15:43:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://kijorooo.com/texterstellung.html</loc>
-  <lastmod>2018-01-06T11:30:04+00:00</lastmod>
+  <loc>https://kijorooo.com/service/korrekturlesen-studenten</loc>
+  <lastmod>2018-02-23T15:43:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://kijorooo.com/korrekturen.html</loc>
-  <lastmod>2018-01-06T11:30:04+00:00</lastmod>
+  <loc>https://kijorooo.com/service/uebersetzungen-studenten</loc>
+  <lastmod>2018-02-23T15:43:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://kijorooo.com/kontakt.html</loc>
-  <lastmod>2018-01-06T11:30:04+00:00</lastmod>
+  <loc>https://kijorooo.com/kontakt</loc>
+  <lastmod>2018-02-23T15:43:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://kijorooo.com/ueber-uns.html</loc>
-  <lastmod>2018-01-06T11:30:04+00:00</lastmod>
+  <loc>https://kijorooo.com/ueber-uns</loc>
+  <lastmod>2018-02-23T15:43:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+
+
+
+
+
 </urlset>
