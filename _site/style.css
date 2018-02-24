@@ -96,6 +96,60 @@ input[type="submit"]:hover {
       left: 1em;
       width: 200px; }
 
+.menu-icon {
+  position: relative;
+  top: 10px;
+  display: none;
+  width: 3em;
+  height: 5em;
+  cursor: pointer;
+  margin: 0 auto;
+  float: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.menu-icon > span {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 0.3em;
+  margin-top: -0.5em;
+  background-color: #fff;
+  border-radius: 3px; }
+
+.menu-icon > span:before,
+.menu-icon > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.menu-icon > span:before {
+  -webkit-transform: translateY(-1em);
+  transform: translateY(-1em); }
+
+.menu-icon > span:after {
+  -webkit-transform: translateY(1em);
+  transform: translateY(1em); }
+
+/* OPENED */
+.menu-icon.open {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-icon.open > span:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.menu-icon.open > span:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
 .dropdown {
   display: inline-block; }
 
@@ -111,7 +165,7 @@ input[type="submit"]:hover {
   visibility: visible;
   opacity: 0;
   position: absolute;
-  background-color: #181818;
+  background-color: #2b2b2b;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -159,8 +213,31 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 610px) {
   #menu {
     flex-direction: column; }
-    #menu ul {
-      padding-left: 0em; } }
+    #menu #ulliste {
+      margin-top: 0em;
+      padding-left: 0em;
+      width: 100%;
+      position: absolute;
+      top: -999px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in; }
+    #menu #ulliste.yes {
+      opacity: 1;
+      position: inherit; }
+
+  .dropdown {
+    display: block; }
+
+  .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    border-left: 2px solid #f5a73a;
+    margin-left: 1em;
+    margin-right: 1em; }
+
+  .menu-icon {
+    display: block; } }
 #area1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
