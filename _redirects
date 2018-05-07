@@ -1,2 +1,4 @@
 # Redirects from what the browser requests to what we serve
 /uebersetzungen            /service/uebersetzungen-studenten
+http://vigorous-lumiere-64d2d3/*    https://www.kijorooo.com/:splat 301!
+https://vigorous-lumiere-64d2d3/*     https://www.kijorooo.com.com/:splat 301!
