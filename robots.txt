@@ -1,3 +1,2 @@
-User-agent: * 
+User-agent: *
 Disallow: /index-wichtig.html
-Disallow: /index-datenschutz.html
