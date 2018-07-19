@@ -3,341 +3,112 @@
 
 body, html
 	margin: 0
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 	font-family: 'Dosis', sans-serif
-
-p 
-	color: #797979
-	font-size: 1em
-	line-height: 1.7em
-
-h1
-	font-size: 2.5em
-
-h2
-	font-size: 1.9em
-
-strong
-	color: black
-
-img
-	max-width: 100%
-
-.liste
-	padding-left: 0em
-	margin-top: 0em
-	li 
-		color: #797979
-		border-bottom: 2px solid #e0e0e0
-		font-size: 1em
-		line-height: 1.7em
-		padding-bottom: .5em
-		padding-top: .5em
-		list-style: none
-
-.active
-	color: #63bdf1
+	background-color: #ffffff
+	background-image: url(/background.svg)
+	background-position: 100% 50%
+	background-size: 2000px
+	background-repeat: no-repeat
+	background-attachment: fixed
 
 
-button
-	background-color: #ff6500
-	font-size: 1.4em
-	color: white
-	border-radius: 5%
-	border: none
-	padding: .5em 1em .5em 1em
-	margin-top: 1.5em
+	
+a
+	text-decoration: none
 
-.nom
-	margin-top: 0em
+#websites
+	.wrapper
+		padding: 2em 0em 2em 0em
+		text-align: center
 
-.icon-service
-	margin-top: 2em
+.title
+	display: inline-block
+	padding: 0.5em 1em 0.5em 1em
+	color: #5d6671
+	font-size: 2em
 
-input, textarea
-	display: inherit
-	padding: .5em
-	width: 300px
-	max-width: 90%
-	margin: .5em
-	margin-left: 0em
-	border: 1px solid #d6d6d6
-	margin-bottom: 2em
-
-input[type="submit"]
-	width: 100px
-	max-width: 90%
-	font-size: .9em
-	transition: all 900ms
-
-input[type="submit"]:hover
-	background-color: #203047
-	color: white
-	cursor: pointer
-
-#warum
-	margin-bottom: 0em
-
-#telefon
-	display: inherit
+#home
+	display: inline-block
 	padding: 1em
-	padding-left: 0em
-	text-decoration: none
-	font-size: 1.7em
-	color: #ff6600
-	letter-spacing: 0.03em
-	padding-top: .3em
+	color: #ff6256
+	font-weight: 800
 
-#homepage-hero	
-	background-color: #243751
-	.homepage-wrapper
-		background-image: url(/img/pattern.png)
-		background-size: contain
-		padding: 6em
-		text-align: center	
-		#logo
-			position: absolute
-			top: 3em
-			left: 1em
-			width: 200px
-
-
-
-
-.menu-icon 
-	position: relative
-	top: 10px
-	display: none
-	width: 3em
-	height: 5em
-	cursor: pointer
-	margin: 0 auto
-	float: none
-	-webkit-transition: all 0.3s
-	transition: all 0.3s
-
-
-.menu-icon > span 
-	position: absolute
-	top: 50%
-	display: block
-	width: 100%
-	height: 0.3em
-	margin-top: -0.5em
-	background-color: #fff
-	border-radius: 3px
-
-
-.menu-icon > span:before,
-.menu-icon > span:after 
-	content: ""
-	position: absolute
-	width: 100%
-	height: 100%
-	background-color: #fff
-	border-radius: 3px
-	-webkit-transition: all 0.3s
-	transition: all 0.3s
-
-
-.menu-icon > span:before 
-	-webkit-transform: translateY(-1em)
-	transform: translateY(-1em)
-
-
-.menu-icon > span:after 
-	-webkit-transform: translateY(1em)
-	transform: translateY(1em)
-
-
-/* OPENED */
-
-.menu-icon.open 
-	-webkit-transform: rotate(45deg)
-	transform: rotate(45deg)
-
-
-.menu-icon.open > span:before 
-	-webkit-transform: rotate(90deg)
-	transform: rotate(90deg)
-
-
-.menu-icon.open > span:after 
-	-webkit-transform: rotate(90deg)
-	transform: rotate(90deg)
-
-
-
-.dropdown 
-	display: inline-block
-
-.dropbtn 
-	background-color: #181818
-	color: white
-	padding: 16px
-	font-size: 16px
-	border: none
-	cursor: pointer
-
-.dropdown-content
-	visibility: visible
-	opacity: 0
-	position: absolute
-	background-color: #2b2b2b
-	min-width: 160px
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
-	z-index: 1
-	transition: all .3s ease-in
+.list
 	a 
-		display: block !important
+		margin: 2em auto
+		
 
-#menu 
-	background-color: #181818
-	margin: 0
-	padding: .4em
+.list
 	display: flex
-	justify-content: space-around
-	align-items: center
-	a 
-		text-decoration: none
-		h3
-			color: #f6b153
-			margin: 0
-
-
-#menu ul a 
-	color: white
-	padding: 12px 16px
-	text-decoration: none
-	display: inline-block
-
-
-.dropdown-content a 
-	color: black
-	padding: 12px 16px
-	text-decoration: none
-	display: block
-
-
-#menu ul a:hover 
-	color: #f5a73a
-
-
-.dropbtn:hover + .dropdown-content 
-	visibility: visible
-	opacity: 1
-
-
-.dropbtn:hover + .dropdown-content, 
-.dropdown-content:hover 
-	visibility: visible
-	opacity: 1
-
-
-
-
-
-@media only screen and (max-width: 610px)
-	#menu 
-		flex-direction: column
-		#ulliste
-			margin-top: 0em
-			padding-left: 0em
-			width: 100%
-			position: absolute
-			top: -999px
-			opacity: 0
-			transition: opacity .3s ease-in
-		#ulliste.yes
-			opacity: 1
-			position: inherit
-	.dropdown 
-		display: block
-	.dropdown-content
-		visibility: visible
-		opacity: 1
-		position: relative
-		border-left: 2px solid #f5a73a
-		margin-left: 1em
-		margin-right: 1em
-	.menu-icon 
-		display: block
-
-
-
-
-
-
-
-
-
-#area1
-	display: grid
-	grid-template-columns: 1fr 1fr
-	width: 1050px
+	flex-wrap: wrap
+	width: 921px
+	margin: 2em auto
+	margin-top: 0px
 	max-width: 90%
-	margin: 0 auto
-	border-top: 2px solid #efefef
-	padding-top: 2em
-	.wrapper-left
-		padding-right: 1em
-		width: 750px
-		max-width: 100%
-	.wrapper-right
-		border-left: 2px solid #f1f1f1
-		padding-left: 2em
-		box-sizing: border-box
-		h4
+	.item
+		position: relative
+		background-color: white
+		padding: 2em
+		border-radius: 10px
+		box-shadow: 0 10px 25px -10px rgba(72, 29, 99, .3)
+		width: 200px
+		height: 150px
+		max-width: 90%
+		transition: all .4s ease-in
+		&:hover
+			transform: translate(0px, -3px)
+			cursor: pointer
+
+		h3
+			color: #5d6671
 			font-size: 1.5em
 			margin-bottom: .5em
-		#port
-			margin-top: 1em
-			width: 100px
-			border-radius: 50%
-			height: 100px
-			object-fit: cover
-		.maa
-			margin-top: .5em
+			margin-top: 0em
+			border-bottom: 1px solid #eaeaea
+			padding-bottom: .4em
+		p
+			color: #a3a3a7
+			margin-top: 0em
+			line-height: 1.4em
+			font-weight: 800
+			
+
+.kreis
+	background-color: #8ed8a6
+	border-radius: 50%
+	width: 25px
+	height: 25px
+	position: absolute
+	top: -15px
+	left: 0
+	right: 0
+	margin-left: auto
+	margin-right: auto
+	border: 2px solid white
+
+.kreis.red
+	background-color: #e27677
 
 
-@media only screen and (max-width: 1000px)
-	#area1
-		display: block
-		.wrapper-left
-			width: auto
-			display: block
-		.wrapper-right
-			border-top: 2px solid #f1f1f1
-			padding-top: 2em
-			padding-left: 0em
-			border-left: none
-
-#stut
-	width: 300px
 
 footer
 	text-align: center
-	background-color: #181818
-	margin-top: 2em
 	padding: 2em
-	h3
-		color: #ff5a00
-		font-weight: 500
-	ul
-		padding-left: 0em
-		border-top: 1px solid white
-		padding-top: .5em
-		width: 300px
-		margin: 0 auto
+	a
+		list-style: none
+		display: inline-block
 		li
 			display: inline-block
-			color: white
-			padding-left: 1em
-			box-sizing: border-box
-			font-size: .8em
-			
-
-
-
-
-
-
+			padding: 1em
+			color: #95a6c1
+			font-weight: 800
+	
+.blank
+	width: 650px
+	max-width: 90%
+	margin: 3em auto
+	line-height: 1.7em
+	color: #5f5f5f
+	font-weight: 800
