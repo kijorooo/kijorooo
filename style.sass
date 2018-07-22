@@ -5,20 +5,18 @@ body, html
 	margin: 0
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
-	font-family: 'Dosis', sans-serif
-	background-color: #ffffff
-	background-image: url(/background.svg)
-	background-position: 100% 50%
-	background-size: 2000px
-	background-repeat: no-repeat
-	background-attachment: fixed
+	font-family: 'Raleway', sans-serif
+	border-top: 2px solid #FF4849
 
-@media only screen and (max-width: 500px)
-	body, html
-		background-position: left
-		background-size: 2000px
-		background-repeat: repeat
+#hero
+	margin: 2em auto
 
+h1
+	font-size: 2em
+	color: #ff3f40
+	span
+		font-weight: 400
+		color: #535b66
 	
 a
 	text-decoration: none
@@ -33,7 +31,6 @@ a
 	padding: 0.5em 1em 0.5em 1em
 	color: #5d6671
 	font-size: 2em
-	margin-top: 0em
 
 #home
 	display: inline-block
@@ -49,53 +46,40 @@ a
 .list
 	display: flex
 	flex-wrap: wrap
-	width: 921px
+	width: 1071px
 	margin: 2em auto
 	margin-top: 0px
 	max-width: 90%
 	.item
 		position: relative
 		background-color: white
-		padding: 2em
-		border-radius: 10px
-		box-shadow: 0 10px 25px -10px rgba(72, 29, 99, .3)
-		width: 200px
-		height: 150px
-		max-width: 90%
+		padding: .5em
+		width: 300px
+		height: 100px
+		max-width: 100%
+		text-align: left
 		transition: all .4s ease-in
+		border-bottom: 2px dotted #FF4849
 		&:hover
-			transform: translate(0px, -3px)
-			cursor: pointer
+			border-bottom: 2px dotted #ffe8e8
+
 		h3
 			color: #5d6671
 			font-size: 1.5em
-			margin-bottom: .5em
+			margin-bottom: 0em
 			margin-top: 0em
-			border-bottom: 1px solid #eaeaea
-			padding-bottom: .4em
+			padding-bottom: 0em
 		p
-			color: #6f6e6e
-			margin-top: 0em
+			color: #a3a3a7
+			margin-top: .3em
 			line-height: 1.4em
-			font-weight: 800
+			font-weight: 400
 			
 
-.kreis
-	background-color: #8ed8a6
-	border-radius: 50%
-	width: 25px
-	height: 25px
-	position: absolute
-	top: -15px
-	left: 0
-	right: 0
-	margin-left: auto
-	margin-right: auto
-	border: 2px solid white
-
-.kreis.red
-	background-color: #e27677
-
+@media only screen and (max-width: 510px)
+	.list
+		.item
+			height: auto
 
 
 footer
