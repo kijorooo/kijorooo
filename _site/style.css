@@ -3,10 +3,12 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Raleway", sans-serif;
-  border-top: 2px solid #FF4849; }
+  border-top: 2px solid #FF4849;
+  background-color: white; }
 
 #hero {
-  margin: 2em auto; }
+  margin: 2em auto;
+  max-width: 100%; }
 
 h1 {
   font-size: 2em;
@@ -49,7 +51,7 @@ a {
     background-color: white;
     padding: 0.5em;
     width: 300px;
-    height: 100px;
+    height: 144px;
     max-width: 100%;
     text-align: left;
     transition: all 0.4s ease-in;
@@ -63,14 +65,22 @@ a {
       margin-top: 0em;
       padding-bottom: 0em; }
     .list .item p {
-      color: #a3a3a7;
+      color: #7b7b7e;
       margin-top: 0.3em;
       line-height: 1.4em;
-      font-weight: 400; }
+      font-weight: 400;
+      font-size: 1.1em; }
 
 @media only screen and (max-width: 510px) {
   .list .item {
-    height: auto; } }
+    height: auto; }
+    .list .item h3 {
+      font-size: 1em; }
+    .list .item p {
+      font-size: 0.9em; }
+
+  .list a {
+    margin: 0.5em auto; } }
 footer {
   text-align: center;
   padding: 2em; }
